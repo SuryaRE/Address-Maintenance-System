@@ -1,0 +1,6 @@
+development:
+  adapter: mysql2
+  database: Addressmaintain
+  username: surya
+  password: surya
+  host: localhost

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AddressMaintain</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	body{
+	background-color:#489bab;
+	font-family: "Adobe Garamond Premier Pro";
+	font-size: 20px;
+	background:img/img_avatar1.png;
+	}
+	.parallax{
+		background-image: url("/img/nexux.jpg");
+		height: 500px;
+
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		
+	}
+</style>
+<%= yield %>
+
+</body>
+</html>

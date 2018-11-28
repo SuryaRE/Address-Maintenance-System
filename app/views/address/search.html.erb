@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style type="text/css">
+	body{
+	background-color:#489bab;
+	font-family: "Adobe Garamond Premier Pro";
+	font-size: 20px;
+	background:img/img_avatar1.png;
+	color:yellow;
+	}
+</style>
+</head>
+ <body>
+
+ 	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Address Maintenance System</a>
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+     
+      <li><a href="home"><span class="glyphicon glyphicon-log-out"> Logout </a></span></li>
+  </ul>
+  </div>
+
+ <div class="jumbotron text-center">
+  <h1 style="color: black;">Search Contacts</h1>
+</div>
+
+<form class="form-horizontal" action="searchaction" method="GET">
+<center>  
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">NickName:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="group" name="grp" required style="width:200px;" placeholder="nick name">
+    </div>
+  </div>
+ <button type="submit" style="font-size: 20pt;" class="btn btn-default">Search</button>
+  
+  
+</form>
+</body>
+</html>

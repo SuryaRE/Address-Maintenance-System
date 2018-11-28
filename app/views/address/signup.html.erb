@@ -1,0 +1,91 @@
+ <html>
+<head>
+  <style type="text/css">
+  body{
+  background-color:#489bab;
+  font-family: "Adobe Garamond Premier Pro";
+  font-size: 20px;
+  background:img/img_avatar1.png;
+  color:yellow;
+  }
+  </style>
+<script type="text/javascript">
+  function validatePass() {
+    pass=document.getElementById("pwd").value;
+    if(pass.length<8 || pass.length>15)
+      document.getElementById("msgp").innerHTML="* Password should be between 8 to 15 characters";
+    else
+      document.getElementById("msgp").innerHTML="";
+  }
+  function validateMail() {
+    mail=document.getElementById("email").value;
+    if(!(mail.includes("@") && mail.includes(".")))
+      document.getElementById("msgm").innerHTML="* Invalid Mail address";
+    else
+      document.getElementById("msgm").innerHTML="";
+  }
+  function validateNum() {
+    num=document.getElementById("phno").value;
+    if(num.length!=10)
+      document.getElementById("msgn").innerHTML="* Invalid Phone number (Must contain 10 digits)";
+    else
+      document.getElementById("msgn").innerHTML="";
+  }
+</script>
+
+</head>
+ <body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Address Maintenance System</a>
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+     
+      <li><a href="home"><span class="glyphicon glyphicon-home"> Home </a></span></li>
+  </ul>
+  </div>
+
+ <div class="jumbotron text-center">
+  <h1 style="color: black;">Sign up</h1>
+</div>
+
+<form class="form-horizontal" action="signupaction" method="GET">
+<center>  
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">UserName:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="name" name="uname" required style="width:200px;" placeholder="Username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="pwd">Password:</label><label id="msgp" style="color: red;font-size: 15px"></label>
+    <div class="col-sm-2">
+      <input type="Password" class="form-control" id="pwd" name="pwd" required onblur="validatePass()" style="width:200px;" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="dob">Date Of Birth:</label>
+    <div class="col-sm-2">
+      <input type="date" class="form-control" id="dofb" name="dob" required style="width:200px;" placeholder="dd-mm-yyyy">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="email">Email:</label><label id="msgm" style="color: red;font-size: 15px"></label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="email" name="email" required size="20px" style="width:200px;" onblur="validateMail()" placeholder="email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="phno">Ph.Number:</label><label id="msgn" style="color: red;font-size: 15px"></label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="phno" name="phno" size="20px" required style="width:200px; " onblur="validateNum()" placeholder="Ph.No">
+    </div>
+  </div>
+   <button type="submit" style="font-size: 20pt;" class="btn btn-default">Submit</button>
+  </center>
+</form>
+</body>
+</html>

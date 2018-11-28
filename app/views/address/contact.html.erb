@@ -1,0 +1,84 @@
+<html>
+<head>
+	<style type="text/css">
+	body{
+	background-color:#489bab;
+	font-family: "Adobe Garamond Premier Pro";
+	font-size: 20px;
+	background:img/img_avatar1.png;
+	color:yellow;
+	}
+</style>
+</head>
+ <body>
+
+ 	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Address Maintenance System</a>
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+     
+      <li><a href="home"><span class="glyphicon glyphicon-log-out"> Logout </a></span></li>
+  </ul>
+  </div>
+
+ <div class="jumbotron text-center">
+  <h1 style="color: black;">Contacts Details</h1>
+</div>
+
+<ul class="nav navbar-nav">
+      <li class="active"><a href="#">create</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">  
+      <li><a href="search"><span class="glyphicon glyphicon-zoom-in"></span> Search</a></li>
+      <li><a href="update"><span class="glyphicon glyphicon-upload"></span> Update</a></li>
+      <li><a href="delete"><span class="glyphicon glyphicon-shopping-cart"></span>Delete</a></li>
+    
+   </ul>
+ </br> </br>
+<form class="form-horizontal" action="create" method="GET">
+<center>	
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">ContactName:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="cnam" name="cnam" required style="width:200px;" placeholder="Username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">ContactNumber:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="cnum" name="cnumber" required style="width:200px;" placeholder="Number">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">NickName:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="group" name="grp" required style="width:200px;" placeholder="nick name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">Address:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="address" name="add"  required size="20px" style="width:400px; height: 100px;" placeholder="Address">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">District:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="district" name="dis" required size="20px" style="width:200px; " placeholder="district">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="uname">State:</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="state" name="stat" required size="20px" style="width:200px; " placeholder="State">
+    </div>
+  </div>
+  
+ <button type="submit"  style="font-size: 20pt;" class="btn btn-default">Create</button>
+ 
+</form>
+</body>
+</html>
